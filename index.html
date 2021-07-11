@@ -6,39 +6,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('ocean.jpg');
-  min-height: 100%;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-</style>
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="style.css">
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -79,7 +48,7 @@ body, html {
   <p class="w3-center"><em>Artificial Intelligence, Robotics, Women in STEM Advocacy</em></p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="megan picture.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+      <img src="images/megan picture.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -142,23 +111,23 @@ body, html {
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
       <a href="https://linktr.ee/techgirlsunited" target="_blank">
-      <img src="Primary (2).png" style="width:100%" onclick="showStuff()" class="w3-hover-opacity" alt="The mist over the mountains">
+      <img src="images/Primary (2).png" style="width:100%" onclick="showStuff()" class="w3-hover-opacity" alt="The mist over the mountains">
       </a>
       <p>As Founder/Executive Director of Tech Girls United(a nonprofit organization) I have been working to empower and educate women across the globe in the tech/CS industry. Through our workshops, boot camps, and conference I have reached 2200+ people from 45+ countries and 35+ states.</p>
     </div>
     <div class="w3-col m3">
       <a href="https://www.reinventedmagazine.com/" target="_blank">
-      <img src="gears.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
+      <img src="images/gears.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
       <p>As a Creative Director at Reinvented Magazine I have been leading my team to create branding designs focused on female empowerment in stem. <br>I am also leading the <a href="https://replit.com/@meganjacob2004/Reinvented-Chrome-Extension#index.html">chrome extension development project</a> for them.</p>
     </div>
     <div class="w3-col m3">
       <a href="https://www.gaiteway.org/" target="_blank">
-      <img src="big logo.PNG" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
+      <img src="images/big logo.PNG" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
       <p>As the President of the nonprofit organization GAITEway (Girls in AI and Tech Education) I have been leading AI workshops for female middle school students in underrepresented communities to introduce them to AI.</p>
     </div>
     <div class="w3-col m3">
       <a href="https://thinkfastrobotics.weebly.com/" target="_blank">
-      <img src="logo2.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
+      <img src="images/logo2.png" style="width:100%" class="w3-hover-opacity" alt="The mist over the mountains"></a>
       <p>As the founder and lead engineer at Think Fast Robotics I have been leading an apprenticeship program for girls interested in robotics. I've been teaching about the mecahnical, software, design, and documentation aspects of robotics.</p>
     </div>
     
@@ -173,54 +142,54 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="conference.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tech Girls United Conference">
+      <img src="images/conference.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tech Girls United Conference">
     </div>
 
     <div class="w3-col m3">
-      <img src="gwc.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Girls Who Code Summit (mentor)">
+      <img src="images/gwc.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Girls Who Code Summit (mentor)">
     </div>
 
     <div class="w3-col m3">
-      <img src="superposition.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My First Hackathon (at Uber HQ)">
+      <img src="images/superposition.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My First Hackathon (at Uber HQ)">
     </div>
 
     <div class="w3-col m3">
-      <img src="1mwis.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="1 Million Women in STEM Campaign">
+      <img src="images/1mwis.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="1 Million Women in STEM Campaign">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="swe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Winning the STEM in Action Award from the Society of Women Engineers(SWE)">
+      <img src="images/swe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Winning the STEM in Action Award from the Society of Women Engineers(SWE)">
     </div>
 
     <div class="w3-col m3">
-      <img src="robot.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Building my Robot for competition as the Lead Engineer of VEX Team 2772J">
+      <img src="images/robot.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Building my Robot for competition as the Lead Engineer of VEX Team 2772J">
     </div>
 
     <div class="w3-col m3">
-      <img src="robot design.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Robot that I Created for the VEX Robotics Competition Season and World Championships">
+      <img src="images/robot design.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Robot that I Created for the VEX Robotics Competition Season and World Championships">
     </div>
 
     <div class="w3-col m3">
-      <img src="womentech.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Women Tech Network Conference">
+      <img src="images/womentech.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Women Tech Network Conference">
     </div>
   </div>
     <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="gaiteway.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AI Workshop I hosted as President of GAITEway(Girls in AI and Tech Education)">
+      <img src="images/gaiteway.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AI Workshop I hosted as President of GAITEway(Girls in AI and Tech Education)">
     </div>
 
     <div class="w3-col m3">
-      <img src="brighteyed.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Interview wih the Brighteyed Podcast">
+      <img src="images/brighteyed.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Interview wih the Brighteyed Podcast">
     </div>
 
     <div class="w3-col m3">
-      <img src="shecodes.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Interview with Perfeth for their She Codes video series">
+      <img src="images/shecodes.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Interview with Perfeth for their She Codes video series">
     </div>
 
     <div class="w3-col m3">
-      <img src="hackathon.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My Medium Article on Hackathons">
+      <img src="images/hackathon.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My Medium Article on Hackathons">
     </div>
   </div>
 </div>
@@ -244,7 +213,7 @@ body, html {
 
   <div class="w3-row w3-section">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="ocean (1).jpg" class="w3-image w3-round" style="w3-padding-64 width:100% ">
+      <img src="images/ocean (1).jpg" class="w3-image w3-round" style="w3-padding-64 width:100% ">
     </div>
     <br>
     <div class="w3-col m6 w3-padding-large">
@@ -269,44 +238,6 @@ body, html {
   </div>
 </footer>
  
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-function showStuff() {
-  let hidden = document.getElementById('hidden');
-  if (hidden.style.display == "none") {
-    hidden.style.display = "block"
-  } else {
-    hidden.style.display = "none"
-  }
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
 
 </body>
 </html>
