@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<title>Megan Jacob</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/megan picture.jpg">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-laptop"></i> EXPERIENCE</a>
+    <a href="#advocacy" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-hand-rock-o"></i> ADVOCACY</a>
+    <a href="#gallery" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> GALLERY</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">GALLERY</span>
+  </div>
+</div>
+<!-- Container (Gallery Section) -->
+<div class="w3-content w3-container w3-padding-64" id="gallery">
+<p class="w3-center"><em>Pictures of events and activities I've hosted and participated in!<br> Click on the images to view more details about each image.</em></p><br>
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="images/conference.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tech Girls United Conference">
+    </div>
+    <div class="w3-col m3">
+      <img src="images/ncwit.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Congratulatory Email from NCWIT after being awarded the NCWIT(National Center for Women & Information Technology) Aspirations in Computing Award">
+    </div>
+    <div class="w3-col m3">
+      <img src="images/worlds.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="World Championships Inspire Award and Medal">
+    </div>
+    <div class="w3-col m3">
+      <a href="https://www.canva.com/design/DAEmBbPSj0U/0dLyC3PdmUgLkkBXIsdXSA/view?utm_content=DAEmBbPSj0U&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"><img src="images/venteur.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Final Presentation Slides from my Data Science/ Machine Learning Internship at Venteur Inc. (Investigating Delayed Healthcare)"></a>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/swe.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Winning the STEM in Action Award from the Society of Women Engineers(SWE)">
+    </div>
+    <div class="w3-col m3">
+      <img src="images/vex.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Excellence Award from VEX Robotics Competition">
+    </div>
+    <div class="w3-col m3">
+      <img src="images/robot.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Building my Robot for competition as the Lead Engineer of VEX Team 2772J">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/robot design.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Robot that I Created for the VEX Robotics Competition Season and World Championships">
+    </div>
+  </div>
+    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="images/gaiteway.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AI Workshop I hosted as President of GAITEway(Girls in AI and Tech Education)">
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://podcasts.apple.com/us/podcast/empowering-girls-in-tech-feat-megan-jacob/id1521165166?i=1000499962404"><img src="images/brighteyed.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Interview wih the Brighteyed Podcast"></a>
+    </div>
+    <div class="w3-col m3">
+      <a href="https://www.1mwis.com/profiles/Megan-Jacob"><img src="images/1mwis.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="1 Million Women in STEM Campaign"></a>
+    </div>
+    <div class="w3-col m3">
+      <img src="images/womentech.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Women Tech Network Conference">
+    </div>    
+  </div>
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <a href="https://medium.com/@meganjacob2004/a-guide-to-your-first-hackathon-12ed78122c82"><img src="images/hackathon.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My Medium Article on Hackathons"></a>
+    </div>
+    <div class="w3-col m3">
+      <a href="https://www.youtube.com/watch?v=DdeB1JngFu8"><img src="images/shecodes.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Interview with Perfeth for their She Codes video series"></a>
+    </div>
+    <div class="w3-col m3">
+      <img src="images/superposition.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My First Hackathon (at Uber HQ)">
+    </div>
+    <div class="w3-col m3">
+      <img src="images/gwc.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Girls Who Code Summit (mentor)">
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/megan.jacob.3388/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/m.jacob04/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/megan-jacob/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/meganjacob"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://devpost.com/meganjacob2004"><i class="fa fa-folder w3-hover-opacity"></i></a>
+  </div>
+</footer>
+ 
+
+</body>
+</html>
