@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megan Jacob - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">MJ</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Hello, I'm Megan Jacob</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science and Cognitive Science at UCLA</p>
+                    <p class="hero-description">
+                        Exploring the intersection of artificial intelligence and human cognition, where technology meets the complexity of the mind.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image hero-image-left">
+                    <div class="profile-image">
+                        <img src="images/Headshot.png" alt="Megan Jacob">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome!</h3>
+                    <p>
+                        I'm Megan Jacob, a computer science student at UCLA, also double majoring in Cognitive Science. I was drawn to Computer Science because it empowered me to create impactful change. I love learning about intelligent systems, both the human mind and AI. Currently, I'm working on building the future of Artifical Intelligence. 
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+                    </p>
+                    <div class="skills">
+                        <h4>Skills & Technologies</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Artifical Intelligence</span>
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://plus.unsplash.com/premium_photo-1682464708085-95b4486e2c32?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=500&h=600&fit=crop" alt="Working">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Software Engineer Intern</h3>
+                            <span class="company">Salesforce Inc.</span>
+                            <br>
+                            <span class="duration">June 2025 - Present</span>
+                        </div>
+                        <p>
+                            Developing Deep Research Mode for Salesforce, a multi-agent system with advanced planning, reasoning, and evaluation capabilities. Collaborating closely with Agentforce and AI Research teams.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineering Intern (Future Technology & Experiences)</h3>
+                            <span class="company">Hewlett Packard (HP) Inc.</span>
+                            <br>
+                            <span class="duration">June 2024 - May 2025</span>
+                        </div>
+                        <p>
+                            Integrated the latest AI developments and research into HP's AI-powered products. Worked on HP's AI Companion and with the RAG and RAISE frameworks. Built evaluation pipelines for voice and LLM models.
+                        </p>
+                        <p><i>Received VP recognition for work on an AI tool for a multi-billion dollar partnership.</i></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Intern</h3>
+                            <span class="company">Lawrence Berkeley National Laboratory</span>
+                            <br>
+                            <span class="duration">June 2022 - August 2022</span>
+                        </div>
+                        <p>
+                            Developed an application for visualizing and analyzing electron microscopy data using Python and the Voila frameworkk. Streamlined data collection processes, improving collaboration with international partners and accelerating research outcomes.
+                        </p>
+                        <p><i>Improved research collection and analysis process efficiency by ~50%.</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://devpost.com/software/memory-playground" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/shreeyapatell/treehacks-2024" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Memory Playground</h3>
+                        <p>A web application that helps boost memory recall and retention through the Memory Palace technique, especially for senior citizens and those with Alzheimer’s and dementia.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Data Analytics Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/savannahalanis/food-app" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>ChewCLA</h3>
+                        <p>Real-time data visualization platform with interactive charts and customizable reports.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="Mobile App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://static1.squarespace.com/static/5fa95df956e953688e53a817/t/61c23da2a32f1f5cc4e3f592/1640119719012/Seriatim+Journal+Fall+2021.pdf?fbclid=IwAR2FsvKZH8s4guAqwLnBMe9n2VA0t6vh_pr-1rrF1srSsuVY2mhGZsCVqKg" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Machine Learning Research</h3>
+                        <p>Using ML classification models to analyze bellwether counties in U.S. presidential elections from 2000-2020.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">sklearn</span>
+                            <span class="tech-tag">support vector machine</span>
+                            <span class="tech-tag">pandas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Recognition</h2>
+            </div>
+            <div class="achievements-scroll-container">
+                <div class="achievements-scroll">
+                    <div class="achievement-card"><h3>Stanford Tree Hacks Intel Award</h3></div>
+                    <div class="achievement-card"><h3>Society of Women Engineers Global Innovator Award</h3></div>
+                    <div class="achievement-card"><h3>NCWIT Aspirations in Computing Award</h3></div>
+                    <div class="achievement-card"><h3>NCWIT AspireIT Award</h3></div>
+                    <div class="achievement-card"><h3>VEX Robotics World Championships Inspire Award</h3></div>
+                    <div class="achievement-card"><h3>VEX Robotics Excellence Award</h3></div>
+                    <div class="achievement-card"><h3>UCLA Engineering Scholarship</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Image Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/salesforce.webp" alt="salesforce">
+                    <div class="gallery-overlay">
+                        <h3>Salesforce Tower</h3>
+                        <p>Orientation week for new interns</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hp.webp" alt="hp">
+                    <div class="gallery-overlay">
+                        <h3>HP Intern Demo</h3>
+                        <p>Presenting my summer internship project</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/treehacks.webp" alt="treehacks">
+                    <div class="gallery-overlay">
+                        <h3>Stanford Tree Hacks</h3>
+                        <p>Created an AI powered solution to help people with memory loss</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/congress.webp" alt="congress">
+                    <div class="gallery-overlay">
+                        <h3>Meeting with Congressman Kim Schrier</h3>
+                        <p>Discussing legislation to support funding for STEM and university programs</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/ncwit.PNG" alt="NCWIT Award">
+                    <div class="gallery-overlay">
+                        <h3>NCWIT Aspirations in Computing Award</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/accenture.jpg" alt="accenture">
+                    <div class="gallery-overlay">
+                        <h3>Accenture Project Demo</h3>
+                        <p>Presenting my solution to create accessible healthcare kits for rural communities</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/lbnl.jpeg" alt="Lawrence Berkeley National Laboratory">
+                    <div class="gallery-overlay">
+                        <h3>Molecular Foundry Tour</h3>
+                        <p>Part of my internship at the Lawrence Berkeley National Laboratory</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/robot.PNG" alt="Robotics Project">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tedx.JPG" alt="TEDx Talk">
+                    <div class="gallery-overlay">
+                        <h3>TEDx Talk</h3>
+                        <p>Speaking about Social Media and Advocacy</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gaiteway.png" alt="Gaiteway">
+                    <div class="gallery-overlay">
+                        <h3>GAITEway Workshop</h3>
+                        <p>Leading an introductory AI workshop for middle school students</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/conference.PNG" alt="Tech Conference">
+                    <div class="gallery-overlay">
+                        <h3>Tech Girls United Conference</h3>
+                        <p>Hosting the TGU Conference to introduce girls internationally to different aspects of tech</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/hackathon.PNG" alt="Hackathon">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/vex.PNG" alt="vex">
+                    <div class="gallery-overlay">
+                        <h3>VEX Robotics Excellence Award</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/venteur.png" alt="venteur">
+                    <div class="gallery-overlay">
+                        <h3>Venteur Inc. Internship Presentation</h3>
+                        <p>Presenting my research findings from my data-driven and ML based project</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/tkd.JPG" alt="tkd">
+                    <div class="gallery-overlay">
+                        <h3>Black Belt Ceremony</h3>
+                        <p>Awarded my black belt in Taekwondo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/swe.PNG" alt="swe">
+                    <div class="gallery-overlay">
+                        <h3>SWE Local Award</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/swe web.PNG" alt="swe web">
+                    <div class="gallery-overlay">
+                        <h3>SWE Global Innovator Award</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/patch news.PNG" alt="patch news">
+                    <div class="gallery-overlay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-image">
+                    <img src="https://images.unsplash.com/photo-1647356191320-d7a1f80ca777?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact Illustration" style="max-width:100%;border-radius:16px;">
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:meganjacob@ucla.edu">meganjacob@ucla.edu</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/megan-jacob" target="_blank">linkedin.com/in/megan-jacob</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/meganjacob" target="_blank">github.com/meganjacob</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Megan Jacob. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+  
+  
+
+    <script src="script.js"></script>
+</body>
+</html> 
