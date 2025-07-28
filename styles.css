@@ -308,8 +308,10 @@ body {
 }
 
 .profile-image {
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3/4;
     margin: 0 auto 30px;
     border-radius: 20px;
     overflow: hidden;
@@ -436,6 +438,9 @@ body {
 }
 
 .image-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 20px 60px var(--shadow-color);
@@ -1029,14 +1034,15 @@ body {
     }
     
     .achievement-card {
-        width: 250px;
-        height: 80px;
-        padding: 15px 10px;
+        width: 180px;
+        height: auto;
+        min-height: 70px;
+        padding: 10px 5px;
     }
     
     .achievement-card h3 {
-        font-size: 1rem;
-        -webkit-line-clamp: 3;
+        font-size: 0.95rem;
+        -webkit-line-clamp: 2;
     }
 
     .gallery-grid {
@@ -1095,5 +1101,132 @@ body {
     .contact-image {
         margin-right: 0;
         margin-top: 20px;
+    }
+} 
+
+/* --- Responsive improvements for all sections and achievements --- */
+
+/* 1. Make images and containers fluid */
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: 3/4;
+    margin: 0 auto 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid var(--border-color);
+}
+
+.image-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 2. Reduce section paddings on small screens */
+@media (max-width: 600px) {
+    .about, .experience, .projects, .achievements, .gallery, .contact {
+        padding: 40px 0;
+    }
+    .section-header {
+        margin-bottom: 30px;
+    }
+}
+
+/* 3. Make .profile-image and other fixed-size elements responsive */
+@media (max-width: 480px) {
+    .profile-image {
+        max-width: 180px;
+        aspect-ratio: 3/4;
+    }
+    .image-container {
+        max-width: 200px;
+    }
+}
+
+/* 4. Improve .achievement-card and .achievements-scroll for mobile */
+@media (max-width: 768px) {
+    .achievements-scroll {
+        gap: 15px;
+    }
+    .achievement-card {
+        width: 180px;
+        height: auto;
+        min-height: 70px;
+        padding: 10px 5px;
+    }
+    .achievement-card h3 {
+        font-size: 0.95rem;
+        -webkit-line-clamp: 2;
+    }
+}
+@media (max-width: 480px) {
+    .achievements-scroll {
+        gap: 8px;
+    }
+    .achievement-card {
+        width: 120px;
+        min-height: 50px;
+        padding: 6px 2px;
+    }
+    .achievement-card h3 {
+        font-size: 0.8rem;
+        -webkit-line-clamp: 2;
+    }
+}
+
+/* 5. Add a breakpoint for ultra-small screens */
+@media (max-width: 350px) {
+    .hero-title, .section-title {
+        font-size: 1.2rem;
+    }
+    .achievement-card {
+        width: 90px;
+        min-height: 30px;
+        padding: 2px 1px;
+    }
+    .achievement-card h3 {
+        font-size: 0.6rem;
+    }
+}
+
+/* 6. Prevent horizontal scroll/overflow */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* 7. Ensure .achievements-scroll is always scrollable on mobile */
+.achievements-scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;         /* Firefox */
+    -ms-overflow-style: none;      /* IE and Edge */
+}
+.achievements-scroll-container::-webkit-scrollbar {
+    display: none;                 /* Chrome, Safari, Opera */
+}
+.achievements-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100vw;
+    width: max-content;
+    gap: 30px;
+    animation: scrollAchievements 60s linear infinite;
+}
+
+/* 8. Fix for .footer-content on small screens */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 } 
